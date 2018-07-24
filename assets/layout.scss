@@ -19,14 +19,14 @@ body {
     font-family: "Open Sans", Arial, sans-serif;
 }
 
-h1{
+h1 {
     font-family: inherit;
     font-weight: 500;
     line-height: 1.1;
     color: inherit;
     font-size: 36px;
 
-    small{
+    small {
         font-size: 68%;
         font-weight: 400;
         line-height: 1;
@@ -34,7 +34,7 @@ h1{
     }
 }
 
-a{
+a {
     text-decoration: none;
     color: #ffffff;
     font-size: inherit;
@@ -51,7 +51,7 @@ a{
     padding: 0 20px;
 }
 
-footer{
+footer {
     position: fixed;
     width: 100%;
     height: 40px;
@@ -59,4 +59,34 @@ footer{
     bottom: 0px;
     color: #a0a0a0;
     font-size: 14px;
+}
+
+ul {
+    display: inline;
+    list-style-type: none;
+    padding: 0;
+}
+
+#recaptcha_widget {
+    display: inline-block;
+}
+
+div.cf-error-details {
+    display: none;
+    font-size: 13px;
+    width: 40%;
+}
+
+div.cf-error-details h1 {
+    margin: 0;
+    font-size: 13px
+}
+
+div.cf-error-details p {
+    width: 80%;
+    display: inline-block;
+}
+
+div.always_online {
+    display: none;
 }

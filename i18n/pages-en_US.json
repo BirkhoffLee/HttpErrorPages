@@ -1,6 +1,6 @@
 {
-    // STANDARD ERROR CODES
-    // =======================================================
+    
+    
 
     "400": {
         "title": "Bad Request",
@@ -17,106 +17,115 @@
         "message": "The requested resource requires an authentication."
     },
 
-    // http 404 not found
+    
     "404": {
         "title": "Resource not found",
         "message": "The requested resource could not be found but may be available again in the future."
     },
 
-    // internal server error
+    
     "500": {
         "title": "Webservice currently unavailable",
-        "message": "An unexpected condition was encountered.\nOur service team has been dispatched to bring it back online."
+        "message": "An unexpected condition was encountered.<br>Our team has been dispatched to bring it back online."
     },
 
-    // unknown http method
+    
     "501": {
         "title": "Not Implemented",
         "message": "The Webserver cannot recognize the request method."
     },
 
-    // http proxy forward error
+    
     "502": {
         "title": "Webservice currently unavailable",
-        "message": "We've got some trouble with our backend upstream cluster.\nOur service team has been dispatched to bring it back online."
+        "message": "We've got some trouble with our backend upstream cluster.<br>Our team has been dispatched to bring it back online."
     },
 
-    // webserver service error
+    
     "503": {
         "title": "Webservice currently unavailable",
-        "message": "We've got some trouble with our backend upstream cluster.\nOur service team has been dispatched to bring it back online."
+        "message": "We've got some trouble with our backend upstream cluster.<br>Our team has been dispatched to bring it back online."
     },
 
-    // CUSTOM ERROR CODES
-    // =======================================================
+    
+    
 
-    // webserver origin error
+    
     "520": {
         "title": "Origin Error - Unknown Host",
         "message": "The requested hostname is not routed. Use only hostnames to access resources."
     },
 
-    // webserver down error
+    
     "521": {
         "title": "Webservice currently unavailable",
-        "message": "We've got some trouble with our backend upstream cluster.\nOur service team has been dispatched to bring it back online."
+        "message": "We've got some trouble with our backend upstream cluster.<br>Our team has been dispatched to bring it back online."
     },
 
-    // maintenance
+    
     "533": {
         "title": "Scheduled Maintenance",
-        "message": "This site is currently down for maintenance.\nOur service team is working hard to bring it back online soon."
+        "message": "This site is currently down for maintenance.<br>Our team is working hard to bring it back online soon."
     },
 
-    // CloudFlare
+    
 
-    "1006": { // IP/Country Block
+    "1006": { 
         "title": "Access Denied",
-        "message": "You are not allowed to view the page. (1)"
+        "message": "You are not allowed to view the page. (1)",
+        "hide_code": true
     },
 
-    "9991": { // WAF Block
+    "9991": { 
         "title": "Access Denied",
-        "message": "You are not allowed to view the page. (2)"
+        "message": "You are not allowed to view the page. (2)",
+        "hide_code": true
     },
 
-    "5000": { // 500 Class Errors
+    "5000": { 
         "title": "Internal Error",
-        "message": "Something's wrong at our side.\nOur service team is working hard to bring it back online soon.\n::CLOUDFLARE_ERROR_500S_BOX::"
+        "message": "<a href=\"#\" id=\"toggle_debug\">Something</a>'s wrong at our side.<br>Our team is working hard to bring it back online soon.",
+        "cf_token": "::CLOUDFLARE_ERROR_500S_BOX::",
+        "hide_code": true
     },
 
-    "1000": { // 1000 Class Errors
+    "1000": { 
         "title": "Internal Error",
-        "message": "Something's wrong at our side.\nOur service team is working hard to bring it back online soon.\n::CLOUDFLARE_ERROR_1000S_BOX::"
+        "message": "<a href=\"#\" id=\"toggle_debug\">Something</a>'s wrong at our side.<br>Our team is working hard to bring it back online soon.",
+        "cf_token": "::CLOUDFLARE_ERROR_1000S_BOX::",
+        "hide_code": true
     },
 
-    "522": { // Always Online™ Error
+    "522": { 
         "title": "Internal Error",
-        "message": "Something's wrong at our side.\nOur service team is working hard to bring it back online soon.\n::ALWAYS_ONLINE_NO_COPY_BOX::"
+        "message": "Something's wrong at our side.<br>Our team is working hard to bring it back online soon. <small><a href=\"#\" onclick=\"document.cookie='cf_use_ob=0;path=/';window.location.reload();return false;\" class=\"cf_reload_button\">Retry</a></small>",
+        "cf_token": "::ALWAYS_ONLINE_NO_COPY_BOX::",
+        "hide_code": true
     },
 
-    "666": { // Basic Security Challenge
-        "title": "One More Step",
-        "message": "::CAPTCHA_BOX::"
+    "666": { 
+        "cf_token": "::CAPTCHA_BOX::",
+        "hide_code": true
     },
 
-    "777": { // WAF Challenge
-        "title": "One More Step",
-        "message": "::CAPTCHA_BOX::"
+    "777": { 
+        "cf_token": "::CAPTCHA_BOX::",
+        "hide_code": true
     },
 
-    "888": { // Country Challenge
-        "title": "One More Step",
-        "message": "::CAPTCHA_BOX::"
+    "888": { 
+        "cf_token": "::CAPTCHA_BOX::",
+        "hide_code": true
     },
 
-    "999": { // I'm Under Attack Mode™ Challenge
-        "title": "Rushing B",
-        "message": "::IM_UNDER_ATTACK_BOX::"
+    "999": { 
+        "cf_token": "::IM_UNDER_ATTACK_BOX::",
+        "hide_code": true
     },
 
-    "1015": { // 429 errors
+    "1015": { 
         "title": "Access Denied",
-        "message": "You are not allowed to view the page. (3)"
+        "message": "You are not allowed to view the page. (3)",
+        "hide_code": true
     }
 }
